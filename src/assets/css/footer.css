@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--a20);
+    color: var(--b80);
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }

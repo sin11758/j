@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+/* variables */
+:root{
+    --b0:#00000099;
+    --b80:#ffffffcc;
+    --b60:#ffffff99;
+    --b:#ffffff;
+    --a20:#333333;
+    --a95:hsl(0, 0%, 95%);
+    --a:#000000;
+    --a60:#d158f999;
+    --c:#009AFE;
+    --p:#6c6992e7
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    text-decoration: none;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+body{
+    -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    background-image:url("./assets/img/background.png");
+    background-size: cover;
+    height: 100vh;
+    /* width: 98vw; */
+    background-repeat: no-repeat;
+    background-position:top;
+    background-color: var(--a);
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width:680px){
+    body{
+        background-image:url("./assets/img/backgroundMobile.png");
+    }
+
+    h2 {
+      color: var(--a);
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+}
+
+
+.activeButton {
+    background-color: #009AFE;
+    color: var(--b); /* Set the text color to white */
+    padding: 10px 20px; /* Adjust the padding according to your design */
+    border: 1px solid #009AFE; /* Remove the border */
+    border-radius: 3px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a hand icon on hover */
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 180px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inActiveButton {
+    background-color: white;
+    color:#009AFE; /* Set the text color to white */
+    padding: 10px 20px; /* Adjust the padding according to your design */
+    border: 1px solid #009AFE; /* Remove the border */
+    border-radius: 3px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a hand icon on hover */
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 180px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .activeButton:hover  .inActiveButton:hover {
+    background-color: #0082D7; /* Change the background color on hover */
   }
-}
+
+  .section{
+    background-color: #ffffff;
+    min-height: 85vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
+
+  a{
+    color: #009AFE;
+    text-decoration:wavy;
+  }
