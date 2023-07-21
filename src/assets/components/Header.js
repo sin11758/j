@@ -38,7 +38,6 @@ function Header() {
         navbar.classList.toggle('navbar-click');
     } 
   } 
-  clickBurger();
 
   const home = () => {
     const element = document.getElementById('home');
@@ -47,26 +46,9 @@ function Header() {
       window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   };
-  const about = () => {
-    const element = document.getElementById('about');
-    if (element) {
-      const offset = element.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
-  };
-  const services = () => {
-    const element = document.getElementById('services');
-    if (element) {
-      const offset = element.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
-  };
-  const contact = () => {
-    const element = document.getElementById('Contact');
-    if (element) {
-      const offset = element.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
+
+  const handleClick = () => {
+      window.scrollTo(0, 0);
   };
   return (
     <nav className="navbar">
@@ -77,15 +59,15 @@ function Header() {
       </div>
 
       {/* logo  */}
-      <Link onClick={home} to="/" className="navbar-logo"><img className="navbar-logo" src={logo} alt="logo" /></Link>
+      <Link onClick={home} to="/" className="navbar-logo"><img  className="navbar-logo" src={logo} alt="logo" /></Link>
 
       {/* navigation */}
       <ul className="navbar-ul">
-        <li className="navbar-ul-link"><Link onClick={about} to={'/'}>About</Link></li>
-        <li className="navbar-ul-link"><Link onClick={services} to={'/'}>Services</Link></li>
-        <li className="navbar-ul-link"><Link to="/work">Work</Link></li>
-        <li className="navbar-ul-link"><Link to="/FAQ">FAQ</Link></li>
-        <li className="navbar-ul-link"><Link onClick={contact}  to={'/'}>Contact</Link></li>
+        <li onClick={clickBurger} className="navbar-ul-link"><Link onClick={handleClick} to={'/moreAboutUs'}>About</Link></li>
+        <li onClick={clickBurger}  className="navbar-ul-link"><Link onClick={handleClick} to={'/services'}>Services</Link></li>
+        <li onClick={clickBurger}  className="navbar-ul-link"><Link  onClick={handleClick}  to="/work">Work</Link></li>
+        <li onClick={clickBurger}  className="navbar-ul-link"><Link  onClick={handleClick}  to="/FAQ">FAQ</Link></li>
+        <li onClick={clickBurger}  className="navbar-ul-link"><Link  onClick={handleClick} to={'/Contact'}>Contact</Link></li>
       </ul>
 
       {/* socialmedia links */}

@@ -2,17 +2,35 @@
     background-color: var(--b);
 }
 
-  
+.about{
+  background-color: var(--b);
+}
+
+#aboutBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+}
+
+#aboutBox img{
+  width: 40vw;
+}
   .about h2 {
-    color: var(--a);
+    color: var(--p);
     font-size: 36px;
     margin-bottom: 30px;
   }
   
   .about p {
-    color: var(--a20);
+    color: var(--b);
     font-size: 18px;
+    border-radius: 30px;
     margin-bottom: 30px;
+    background-color: var(--p);
+    padding: 30px;
+    width: 40vw;
   }
 
   
@@ -94,6 +112,19 @@
   }
 
 
+  .about p {
+
+    border-radius: 0px;
+    width: 80vw;
+  }
+
+  #aboutBox{
+  
+    flex-direction: column;
+  }
+  #aboutBox img{
+    width: 80vw;
+  }
 }
 
 /* reviews */
@@ -154,3 +185,4 @@ h1{
   }
 
 }
+

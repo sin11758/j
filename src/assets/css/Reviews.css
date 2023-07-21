@@ -1,0 +1,147 @@
+.slideshow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-color: var(--b);
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #fe7b0073;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .arrow:hover,  .arrow:active{
+    background-color: var(--p);
+  }
+  
+  .arrow.left {
+    left: 0;
+    
+    border-radius:  0% 50% 50% 0% ;
+  }
+  
+  .arrow.right {
+    right: 0;
+    border-radius:  50% 0% 0% 50% ;
+  }
+  
+  .review {
+    /* margin: 0 20px; */
+    text-align: center;
+    background-color: var(--p50);
+    
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--p);
+  }
+  @media only screen and (max-width: 660px) {
+    .slideshow {
+      min-height: 300px;
+    }
+    .arrow {
+      width: 40px;
+      height: 40px;
+    }
+    .text {
+      font-size: 18px;
+      margin: 20px;
+    }
+    .author {
+      font-size: 14px;
+    }
+
+      
+  .review {
+    padding: auto 30x;
+  }
+  }
+  
+
+
+
+  .review {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: slide-in;
+  animation-duration: 1s;
+}
+
+
+
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 93vw;
+    height: 200px;
+    margin: 5vw;
+  }
+  
+  .review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-text {
+    margin-bottom: 1rem;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .review-author {
+    margin-top: auto;
+  }
+  
+  .author {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  /* .slide-left {
+      transform: translateX(300%);
+}
+
+.slide-right {
+      transform: translateX(-300%);
+  } */
+  

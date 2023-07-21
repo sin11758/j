@@ -1,0 +1,56 @@
+#Work{
+    padding-top : 70px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* work.css */
+.Work {
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .ReactTabs__TabList {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ReactTabs__Tab {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .ReactTabs__Tab:focus,  .ReactTabs__Tab:active {
+    border-color: #ccc;
+    border-bottom-color: transparent;
+    background-color:var(--a95);
+  }
+  
+  .ReactTabs__TabPanel {
+    padding: 1rem;
+    border-top: 1px solid var(--a95);
+    background-color: var(--a95);
+    
+  }
+  
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  

@@ -3,6 +3,7 @@ import Welcome from "./welcome";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
+import Reviews from "./Reviews";
 
 function Main() {
   return (
@@ -10,7 +11,8 @@ function Main() {
         <Welcome/>
         <About/>
         <Services/>
-        <Contact/>
+        <Reviews/>
+        {/* <Contact/> */}
     </>
   );
 }

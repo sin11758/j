@@ -1,0 +1,124 @@
+#MessageBox {
+  display: flex;
+  flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #MessageBox form {
+    
+    background-color: rgba(43, 43, 43, 0.6);
+    width: 60%;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: none;
+    background-size: 20px;
+    margin: 0px 5vw;
+    padding-top: 0px;
+
+    height: 80vh;
+    justify-content: space-between;
+   
+  }
+
+  #MessageBox>form{
+    overflow:scroll;
+  }
+
+  #MessageBox>form>button{
+    position:sticky;
+    bottom:20px;
+  }
+
+  .messageBox{
+    position: sticky;
+    bottom: 1px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 20px auto;
+    
+  }
+  
+  .leftMessage,
+  .rightMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    max-width: 80vw;
+    min-width: 50vw;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .leftMessage{
+    background-color: var(--a95);
+    border-radius: 20px 20px 20px 0px;
+    margin: 0px 50px 10px 10px;
+  }
+
+  .rightMessage{
+    background-color: var(--p80);
+    border-radius: 20px 20px 0px 20px;
+    margin: 0px 10px 10px 50px;
+  }
+  
+  .leftMessage p,
+  .rightMessage input,
+  .rightMessage textarea {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+    max-width: 50vw;
+  }
+  
+
+  
+  .rightMessage input,
+  .rightMessage textarea {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .activeButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .activeButton:hover {
+    background-color: #0b7dda;
+  }
+  
+
+  
